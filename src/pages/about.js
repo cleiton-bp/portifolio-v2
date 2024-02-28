@@ -1,0 +1,120 @@
+import AnimatedText from "@/components/AnimatedText";
+import Layout from "@/components/Layout";
+import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Head from "next/head";
+import React, { useRef, useEffect } from "react";
+import Image from "next/image";
+import profilePic from "../../public/images/profile/developer-pic-3.png";
+import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
+
+const AnimatedNumbers = ({ value }) => {
+  const ref = useRef(null);
+
+  const motionValue = useMotionValue(0);
+  const springValue = useSpring(motionValue, { duration: 3000 });
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      motionValue.set(value);
+    }
+  }, [isInView, value, motionValue]);
+
+  useEffect(() => {
+    springValue.on("change", (latest) => {
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
+
+  return <span ref={ref}></span>;
+};
+
+function about() {
+  return (
+    <>
+      <Head>
+        <title>cleiton-bp | About</title>
+        <meta name="description" content="any description" />
+      </Head>
+      <main className="flex w-full flex-col items-center justify-center">
+        <Layout className="pt-16">
+          <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
+          <div className="grid w-full grid-cols-8 gap-16">
+            <div className="col-span-3 flex flex-col items-start justify-start">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+                Biography
+              </h2>
+              <p className="font-medium">
+                Hi, I’m Cleiton, a full stack developer who loves exploring and
+                learning new technologies. I still don’t have professional
+                experience in the area, but I have some personal projects that
+                demonstrate my skills and knowledge. I’m always looking for new
+                challenges and opportunities to create incredible, user-focused
+                applications.
+              </p>
+              <p className="my-4 font-medium">
+                I believe application development is more than just writing code
+                - it’s about solving problems and creating intuitive, delightful
+                experiences for users; that’s why I constantly try to learn,
+                research best practices and solutions and adapt to different
+                demands and challenges.
+              </p>
+              <p className="font-medium">
+                In any application I work on, whether it’s a website, a mobile
+                app, or another digital product, I bring my commitment to
+                quality and performance to every project I work on. I hope to
+                have the opportunity to bring my skills and passion to your next
+                project.
+              </p>
+            </div>
+
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 ">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+              <Image
+                src={profilePic}
+                alt="cleiton-bp"
+                className="w-full h-auto rounded-2xl"
+              />
+            </div>
+
+            <div className="col-span-2 flex flex-col items-end justify-between">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={6} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  soft skills
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={3} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  Projects completed
+                </h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={1} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  years of experience
+                </h2>
+              </div>
+            </div>
+          </div>
+          <Skills />
+          <Experience />
+          <Education />
+        </Layout>
+      </main>
+    </>
+  );
+}
+
+export default about;
