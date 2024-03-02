@@ -9,6 +9,7 @@ const Layout = ({ children, className = "" }) => {
         inline-block 
         z-0 
         p-32 
+        dark:bg-dark
         bg-light 
         ${className}
         `}

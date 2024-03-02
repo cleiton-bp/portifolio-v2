@@ -616,4 +616,3 @@ export const YouTubeIcon = ({ className, ...rest }) => (
     />
   </svg>
 );
-

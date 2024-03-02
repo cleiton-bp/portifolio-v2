@@ -7,10 +7,12 @@ import {
   GithubIcon,
   InstagramIcon,
   LinkedInIcon,
-  WhatsappIcon,
+  MoonIcon,
+  SunIcon,
   YouTubeIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
+import useThemeSwitcher from "@/hooks/useThemeSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -33,6 +35,7 @@ const CustomLink = ({ href, title, className = "" }) => {
           ease 
           duration-300
           ${router.asPath === href ? "w-full" : "w-0"}
+          dark:bg-light
         `}
       >
         &nbsp;
@@ -42,6 +45,8 @@ const CustomLink = ({ href, title, className = "" }) => {
 };
 
 const NavBar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
     <header
       className="
@@ -52,6 +57,7 @@ const NavBar = () => {
       flex 
       items-center 
       justify-between
+      dark:text-light
       "
     >
       <nav>
@@ -69,8 +75,9 @@ const NavBar = () => {
           whileTap={{ scale: 0.9 }}
           className="w-8 mx-2"
         >
-          <CurriculumIcon />
+          <CurriculumIcon className="dark:fill-light" />
         </motion.a>
+
         <motion.a
           href="https://github.com/cleiton-bp"
           target={"_blank"}
@@ -80,7 +87,7 @@ const NavBar = () => {
         >
           <GithubIcon />
         </motion.a>
-        <motion.a
+        {/* <motion.a
           href="https://wa.me/5551996908049"
           target={"_blank"}
           whileHover={{ y: -3 }}
@@ -88,7 +95,7 @@ const NavBar = () => {
           className="w-8 mx-2"
         >
           <WhatsappIcon />
-        </motion.a>
+        </motion.a> */}
         <motion.a
           href="https://www.linkedin.com/in/cleiton-pereira-249044240/"
           target={"_blank"}
@@ -116,7 +123,21 @@ const NavBar = () => {
         >
           <YouTubeIcon />
         </motion.a>
+
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className={`ml-3 flex items-center justify-center rounded-full p-1
+          ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
+          `}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
+
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
       </div>

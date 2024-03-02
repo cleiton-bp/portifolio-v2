@@ -28,6 +28,10 @@ const Logo = () => {
         rounded-full
         text-2x1
         font-bold
+        border
+        border-solid
+        border-transparent
+        dark:border-light
       "
         whileHover={{
           backgroundColor: [
