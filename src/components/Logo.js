@@ -8,10 +8,11 @@ const Logo = () => {
   return (
     <div
       className="
-    flex 
-    item-center 
-    justify-center 
-    mt-2"
+        flex 
+        item-center 
+        justify-center 
+        mt-2 
+        md:mt-0"
     >
       <MotionLink
         href="/"
