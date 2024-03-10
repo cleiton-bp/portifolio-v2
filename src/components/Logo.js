@@ -18,14 +18,14 @@ const Logo = () => {
         className="
         w-full
         h-full
-        p-4
-        mt-2
+        p-2
+        mt-4
         bg-dark 
         text-light 
         flex 
         items-center 
         justify-center 
-        rounded-full
+        rounded-lg
         text-2x1
         font-bold
         border
@@ -52,7 +52,7 @@ const Logo = () => {
         }}
         whileTap={{ scale: 0.9 }}
       >
-        BP
+        Cleiton-bp
       </MotionLink>
     </div>
   );

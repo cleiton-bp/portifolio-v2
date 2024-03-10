@@ -6,7 +6,6 @@ import {
   CurriculumIcon,
   GithubIcon,
   InstagramIcon,
-  InstagramIconMobile,
   LinkedInIcon,
   MoonIcon,
   SunIcon,
@@ -50,7 +49,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 
   const handleClick = () => {
     toggle();
-    router.push(href);
+    router.push();
   };
 
   return (
@@ -104,10 +103,6 @@ const NavBar = () => {
       justify-between
       dark:text-light
       relative
-      z-10
-      lg:px-16
-      md:px-12
-      sm:px-8
       "
     >
       <button
@@ -270,13 +265,13 @@ const NavBar = () => {
               <LinkedInIcon />
             </motion.a>
             <motion.a
-              href="https://www.linkedin.com/in/cleiton-pereira-249044240/"
+              href="https://www.instagram.com/cleiton_bp/"
               target={"_blank"}
               whileHover={{ y: -3 }}
               whileTap={{ scale: 0.9 }}
-              className="w-8 mx-2 fill-light dark:fill-dark sm:max-1 "
+              className="w-8 mx-2 sm:max-1 lg:max-1 "
             >
-              <InstagramIconMobile />
+              <InstagramIcon />
             </motion.a>
             <motion.a
               href="https://youtube.com/@Cleiton_bp"

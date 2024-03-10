@@ -2,7 +2,7 @@ import React from "react";
 
 const Layout = ({ children, className = "" }) => {
   return (
-    <div 
+    <div
       className={`
         w-full 
         h-full 
@@ -11,11 +11,15 @@ const Layout = ({ children, className = "" }) => {
         p-32 
         dark:bg-dark
         bg-light 
+        xl:p-24
+        lg:p-16
+        md:p-12
+        sm:p-8
         ${className}
         `}
-      >
+    >
       {children}
     </div>
-  )
-}
+  );
+};
 export default Layout;
