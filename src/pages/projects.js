@@ -7,6 +7,7 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import project1 from "../../public/images/projects/image-project.jpg";
+import project2 from "../../public/images/projects/notepad.png";
 
 const FramerImage = motion(Image);
 
@@ -28,7 +29,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           src={img}
           alt={title}
           className="w-full h-auto"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.1 }}
           priority
           sizes="
@@ -51,7 +52,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             {title}
           </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center ">
           <Link className="w-10" href={github} target="_blank">
             <GithubIcon />
@@ -71,12 +74,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl 
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl 
       border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
       xs:p-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
-        rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" 
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark 
+        rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
 
       <Link
@@ -102,7 +107,9 @@ const Project = ({ title, type, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
 
         <div className="w-full mt-2 flex items-center justify-between">
@@ -139,12 +146,12 @@ function projects() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-x-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                img={project1}
-                title="Project Name"
-                summary="A project is a one-time, temporary, and progressive effort undertaken to create a unique product, service, or result. In other words, a project has a determined beginning, middle and end."
+                img={project2}
+                title="Notepad"
+                summary="This innovative digital notepad lets you create notes by voice, making capturing ideas quick and convenient, it's the ideal solution for recording reminders and thoughts when typing isn't an option."
                 type="Featured project"
-                link="/"
-                github="/"
+                link="https://aplication-notepad.netlify.app"
+                github="https://github.com/cleiton-bp/notepad"
               />
             </div>
             <div className="col-span-6 sm:col-span-12">

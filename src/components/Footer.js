@@ -11,17 +11,21 @@ const Footer = () => {
           <spam className="italic">Programmer Diary</spam>
         </span>
         <div className="flex items-center lg:py-2">
-          Build With <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>{" "}
+          Build With{" "}
+          <span className="text-primary dark:text-primaryDark text-2xl px-1">
+            &#9825;
+          </span>{" "}
           by&nbsp;
           <Link
-            href={"/"}
+            href={"https://github.com/cleiton-bp"}
+            target="_blank"
             className="underline underline-offset-2 hover:drop-shadow-lg"
           >
             cleiton-bp
           </Link>
         </div>
         <Link
-          href={"https://github.com/cleiton-bp"}
+          href={"https://github.com/cleiton-bp/portifolio-v2"}
           target="_blank"
           className="underline underline-offset-2 flex hover:drop-shadow-xl"
         >
