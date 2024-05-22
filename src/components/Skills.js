@@ -64,8 +64,8 @@ function Skills() {
           <Skill name="React" x="-35vw" y="4vw" />
         </Link>
 
-        <Link target="_blank" href="https://nextjs.org/docs">
-          <Skill name="NextJS" x="-43vw" y="-12vw" />
+        <Link target="_blank" href="https://docs.nestjs.com">
+          <Skill name="NestJS" x="-43vw" y="-12vw" />
         </Link>
 
         <Link target="_blank" href="https://nodejs.org/about">
@@ -80,8 +80,8 @@ function Skills() {
           <Skill name="Docker" x="-20vw" y="13vw" />
         </Link>
 
-        <Link target="_blank" href="https://symfony.com/doc/current/index.html">
-          <Skill name="Symfony" x="-25vw" y="-13vw" />
+        <Link target="_blank" href="https://angular.io/docs">
+          <Skill name="Angular" x="-25vw" y="-13vw" />
         </Link>
 
         <Link target="_blank" href="https://help.figma.com">

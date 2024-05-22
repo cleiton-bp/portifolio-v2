@@ -52,12 +52,12 @@ function Experience() {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="position"
-            company="company"
-            companyLink="#"
-            time="time"
-            address="location"
-            work="daily tasks"
+            position="Full Stack Developer"
+            company="Conecta360"
+            companyLink="https://www.conecta360.com.br/"
+            time="Start - 15/04/2024"
+            address="Home Office"
+            work="Private Tasks"
           />
           <Details
             position="position"
