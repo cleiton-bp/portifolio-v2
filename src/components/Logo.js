@@ -27,7 +27,7 @@ const Logo = () => {
         items-center 
         justify-center 
         rounded-lg
-        text-2x1
+        text-2xl
         font-bold
         border
         border-solid

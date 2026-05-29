@@ -24,6 +24,30 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
+        scanline: "scanline 4.5s linear infinite",
+        typing: "typing 1.8s steps(25, end) forwards",
+        caret: "caret 1s step-end infinite",
+        "pulse-glow": "pulse-glow 2.4s ease-in-out infinite",
+      },
+      keyframes: {
+        scanline: {
+          "0%": { top: "-8%", opacity: "0" },
+          "12%": { opacity: "0.8" },
+          "88%": { opacity: "0.8" },
+          "100%": { top: "108%", opacity: "0" },
+        },
+        typing: {
+          from: { width: "0" },
+          to: { width: "25ch" },
+        },
+        caret: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "1", transform: "scale(1)" },
+          "50%": { opacity: "0.5", transform: "scale(0.8)" },
+        },
       },
       backgroundImage: {
         circularLight:

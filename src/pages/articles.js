@@ -6,6 +6,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import article1 from "../../public/images/articles/img-article.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const FramerImage = motion(Image);
 
@@ -100,16 +101,17 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
   );
 };
 
-function articles() {
+function Articles() {
+  const { t } = useLanguage();
   return (
     <>
       <Head>
-        <title>cleiton-bp | Articles</title>
+        <title>{`cleiton-bp | ${t("nav.articles")}`}</title>
         <meta name="description" content="any description" />
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Words Can Change The World!" className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <AnimatedText text={t("articles.title")} className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               title="Name Article"
@@ -144,4 +146,4 @@ function articles() {
   );
 }
 
-export default articles;
+export default Articles;

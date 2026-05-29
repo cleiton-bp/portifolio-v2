@@ -8,20 +8,26 @@ import { GithubIcon } from "@/components/Icons";
 import { motion } from "framer-motion";
 import project1 from "../../public/images/projects/image-project.jpg";
 import project2 from "../../public/images/projects/notepad.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  const { t } = useLanguage();
   return (
-    <article
-      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl 
+    <motion.article
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl
       border border-solid border-dark bg-light shadow-2xl p-12 dark:shadow-md dark:shadow-gray dark:bg-dark dark:border-light
-      lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 
+      lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
       "
     >
       {/* <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" /> */}
       <Link
-        className="w-1x2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
         href={link}
         target="_blank"
       >
@@ -39,7 +45,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         />
       </Link>
 
-      <div className="w-1x2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
           {type}
         </span>
@@ -64,18 +70,23 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             href={link}
             target="_blank"
           >
-            Visit Project
+            {t("projects.visitProject")}
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
 const Project = ({ title, type, img, link, github }) => {
+  const { t } = useLanguage();
   return (
-    <article
-      className="w-full flex flex-col items-center justify-center rounded-2xl 
+    <motion.article
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      className="w-full flex flex-col items-center justify-center rounded-2xl
       border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light
       xs:p-4"
     >
@@ -118,29 +129,30 @@ const Project = ({ title, type, img, link, github }) => {
             href={link}
             target="_blank"
           >
-            Visit
+            {t("projects.visit")}
           </Link>
           <Link className="w-8 md:w-6" href={github} target="_blank">
             <GithubIcon />
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
-function projects() {
+function Projects() {
+  const { t } = useLanguage();
   return (
     <>
       <Head>
-        <title>cleiton-bp | Projects</title>
+        <title>{`cleiton-bp | ${t("nav.projects")}`}</title>
         <meta name="description" content="any description" />
       </Head>
 
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Imagination surpasses knowledges!"
+            text={t("projects.title")}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-x-24 sm:gap-x-0">
@@ -148,8 +160,8 @@ function projects() {
               <FeaturedProject
                 img={project2}
                 title="Notepad"
-                summary="This innovative digital notepad lets you create notes by voice, making capturing ideas quick and convenient, it's the ideal solution for recording reminders and thoughts when typing isn't an option."
-                type="Featured project"
+                summary={t("projects.notepad")}
+                type={t("projects.featured")}
                 link="https://aplication-notepad.netlify.app"
                 github="https://github.com/cleiton-bp/notepad"
               />
@@ -207,4 +219,4 @@ function projects() {
   );
 }
 
-export default projects;
+export default Projects;

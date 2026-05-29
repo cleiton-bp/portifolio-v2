@@ -14,6 +14,8 @@ import {
 } from "./Icons";
 import { motion } from "framer-motion";
 import useThemeSwitcher from "@/hooks/useThemeSwitcher";
+import { useLanguage } from "@/i18n/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -87,6 +89,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
 const NavBar = () => {
   const [mode, setMode] = useThemeSwitcher();
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useLanguage();
 
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -134,10 +137,9 @@ const NavBar = () => {
       {/* Screen full */}
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
-          <CustomLink href="/" title="Home" className="mr-3" />
-          <CustomLink href="/about" title="About" className="mx-3" />
-          <CustomLink href="/projects" title="Projects" className="mx-3" />
-          <CustomLink href="/articles" title="Articles" className="ml-3" />
+          <CustomLink href="/" title={t("nav.home")} className="mr-3" />
+          <CustomLink href="/about" title={t("nav.about")} className="mx-3" />
+          <CustomLink href="/projects" title={t("nav.projects")} className="ml-3" />
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
@@ -209,6 +211,8 @@ const NavBar = () => {
               <MoonIcon className={"fill-dark"} />
             )}
           </button>
+
+          <LanguageSwitcher className="ml-3" />
         </nav>
       </div>
 
@@ -222,20 +226,15 @@ const NavBar = () => {
       "
         >
           <nav className="flex flex-col items-center justify-center">
-            <CustomMobileLink href="/" title="Home" toggle={handleClick} />
+            <CustomMobileLink href="/" title={t("nav.home")} toggle={handleClick} />
             <CustomMobileLink
               href="/about"
-              title="About"
+              title={t("nav.about")}
               toggle={handleClick}
             />
             <CustomMobileLink
               href="/projects"
-              title="Projects"
-              toggle={handleClick}
-            />
-            <CustomMobileLink
-              href="/articles"
-              title="Articles"
+              title={t("nav.projects")}
               toggle={handleClick}
             />
           </nav>
@@ -300,6 +299,8 @@ const NavBar = () => {
                 <MoonIcon className={"fill-dark"} />
               )}
             </button>
+
+            <LanguageSwitcher className="ml-3" />
           </nav>
         </motion.div>
       ) : null}

@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar";
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
+import { LanguageProvider } from "@/i18n/LanguageContext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -16,13 +17,15 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main
-        className={`${montserrat.variable} dark:bg-dark font-mont bg-light w-full min-h-screen`}
-      >
-        <NavBar />
-        <Component {...pageProps} />
-        <Footer />
-      </main>
+      <LanguageProvider>
+        <main
+          className={`${montserrat.variable} dark:bg-dark font-mont bg-light w-full min-h-screen`}
+        >
+          <NavBar />
+          <Component {...pageProps} />
+          <Footer />
+        </main>
+      </LanguageProvider>
     </>
   );
 }
