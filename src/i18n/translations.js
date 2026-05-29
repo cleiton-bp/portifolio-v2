@@ -60,7 +60,7 @@ export const translations = {
       visitProject: "Visit Project",
       visit: "Visit",
       notepad:
-        "This innovative digital notepad lets you create notes by voice, making capturing ideas quick and convenient — the ideal solution for recording reminders and thoughts when typing isn't an option.",
+        "A digital notepad that turns your voice into text — record an audio note and it's transcribed automatically. Organize notes into folders, mark favorites, search them instantly, and listen back with text-to-speech in the voice you choose, all in a light or dark theme.",
     },
     articles: { title: "Words can change the world!" },
     footer: { builtWith: "Built with", by: "by", sourceCode: "Source Code" },
@@ -110,7 +110,7 @@ export const translations = {
       visitProject: "Visitar Projeto",
       visit: "Visitar",
       notepad:
-        "Este bloco de notas digital inovador permite criar notas por voz, tornando a captura de ideias rápida e prática — a solução ideal para registrar lembretes e pensamentos quando digitar não é uma opção.",
+        "Um bloco de notas digital que transforma sua voz em texto — grave uma nota em áudio e ela é transcrita automaticamente. Organize as notas em pastas, marque favoritas, busque rapidamente e ouça-as de volta com leitura por voz, escolhendo o locutor, tudo em tema claro ou escuro.",
     },
     articles: { title: "Palavras podem mudar o mundo!" },
     footer: { builtWith: "Feito com", by: "por", sourceCode: "Código-fonte" },
@@ -160,7 +160,7 @@ export const translations = {
       visitProject: "Visitar Proyecto",
       visit: "Visitar",
       notepad:
-        "Esta innovadora libreta digital te permite crear notas por voz, haciendo que capturar ideas sea rápido y cómodo: la solución ideal para registrar recordatorios y pensamientos cuando escribir no es una opción.",
+        "Una libreta digital que convierte tu voz en texto: graba una nota de audio y se transcribe automáticamente. Organiza las notas en carpetas, marca favoritas, búscalas al instante y escúchalas con lectura por voz eligiendo el locutor, todo en tema claro u oscuro.",
     },
     articles: { title: "¡Las palabras pueden cambiar el mundo!" },
     footer: { builtWith: "Hecho con", by: "por", sourceCode: "Código fuente" },
@@ -210,7 +210,7 @@ export const translations = {
       visitProject: "Voir le Projet",
       visit: "Voir",
       notepad:
-        "Ce bloc-notes numérique innovant vous permet de créer des notes par la voix, rendant la capture d'idées rapide et pratique — la solution idéale pour enregistrer des rappels et des pensées lorsque taper n'est pas une option.",
+        "Un bloc-notes numérique qui transforme votre voix en texte : enregistrez une note audio et elle est transcrite automatiquement. Organisez les notes en dossiers, marquez vos favorites, recherchez-les instantanément et réécoutez-les en lecture vocale avec la voix de votre choix, le tout en thème clair ou sombre.",
     },
     articles: { title: "Les mots peuvent changer le monde !" },
     footer: { builtWith: "Conçu avec", by: "par", sourceCode: "Code source" },
@@ -260,7 +260,7 @@ export const translations = {
       visitProject: "Projekt ansehen",
       visit: "Ansehen",
       notepad:
-        "Dieser innovative digitale Notizblock ermöglicht es, Notizen per Sprache zu erstellen, wodurch das Festhalten von Ideen schnell und bequem wird — die ideale Lösung, um Erinnerungen und Gedanken festzuhalten, wenn Tippen keine Option ist.",
+        "Ein digitaler Notizblock, der deine Stimme in Text verwandelt — nimm eine Audionotiz auf, und sie wird automatisch transkribiert. Organisiere Notizen in Ordnern, markiere Favoriten, durchsuche sie sofort und höre sie dir per Sprachausgabe mit der Stimme deiner Wahl an, alles im hellen oder dunklen Design.",
     },
     articles: { title: "Worte können die Welt verändern!" },
     footer: { builtWith: "Erstellt mit", by: "von", sourceCode: "Quellcode" },
@@ -310,7 +310,7 @@ export const translations = {
       visitProject: "Visita il Progetto",
       visit: "Visita",
       notepad:
-        "Questo innovativo blocco note digitale ti permette di creare note con la voce, rendendo la cattura delle idee rapida e comoda — la soluzione ideale per registrare promemoria e pensieri quando digitare non è un'opzione.",
+        "Un blocco note digitale che trasforma la tua voce in testo: registra una nota audio e viene trascritta automaticamente. Organizza le note in cartelle, segna le preferite, cercale all'istante e riascoltale con la lettura vocale scegliendo la voce, tutto in tema chiaro o scuro.",
     },
     articles: { title: "Le parole possono cambiare il mondo!" },
     footer: { builtWith: "Realizzato con", by: "da", sourceCode: "Codice sorgente" },
@@ -360,7 +360,7 @@ export const translations = {
       visitProject: "プロジェクトを見る",
       visit: "見る",
       notepad:
-        "この革新的なデジタルメモ帳は、音声でメモを作成でき、アイデアを素早く手軽に記録できます。入力が難しいときにリマインダーや思いつきを残すための理想的なソリューションです。",
+        "声をテキストに変えるデジタルメモ帳。音声でメモを録音すると自動で文字起こしされます。メモをフォルダで整理し、お気に入りを登録、すぐに検索でき、好みの声を選んで音声読み上げで聞き返すことも可能。ライト／ダークテーマに対応しています。",
     },
     articles: { title: "言葉は世界を変えられる！" },
     footer: { builtWith: "制作", by: "by", sourceCode: "ソースコード" },
@@ -410,7 +410,7 @@ export const translations = {
       visitProject: "查看项目",
       visit: "查看",
       notepad:
-        "这款创新的数字记事本支持语音创建笔记，让记录想法快捷又方便——当不便打字时，是记录提醒和灵感的理想之选。",
+        "一款将语音转为文字的数字记事本——录制语音笔记即可自动转录。可将笔记整理到文件夹、标记收藏、即时搜索，还能选择喜欢的语音通过语音朗读回放收听，并支持浅色与深色主题。",
     },
     articles: { title: "言语可以改变世界！" },
     footer: { builtWith: "用", by: "打造，作者", sourceCode: "源代码" },
