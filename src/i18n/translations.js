@@ -61,6 +61,8 @@ export const translations = {
       visit: "Visit",
       notepad:
         "A digital notepad that turns your voice into text — record an audio note and it's transcribed automatically. Organize notes into folders, mark favorites, search them instantly, and listen back with text-to-speech in the voice you choose, all in a light or dark theme.",
+      zippixel:
+        "A tool that compresses and shrinks your images right in the browser — free, fast and completely private. Drop in one or several images at once and ZipPixel automatically picks the format that yields the smallest file, showing the original size, the new size and how much you saved in real time. Tweak the quality whenever you like, and rest easy: everything runs locally with the Canvas API, so no image is ever uploaded to a server.",
     },
     articles: { title: "Words can change the world!" },
     footer: { builtWith: "Built with", by: "by", sourceCode: "Source Code" },
@@ -111,6 +113,8 @@ export const translations = {
       visit: "Visitar",
       notepad:
         "Um bloco de notas digital que transforma sua voz em texto — grave uma nota em áudio e ela é transcrita automaticamente. Organize as notas em pastas, marque favoritas, busque rapidamente e ouça-as de volta com leitura por voz, escolhendo o locutor, tudo em tema claro ou escuro.",
+      zippixel:
+        "Uma ferramenta que comprime e reduz suas imagens direto no navegador — grátis, rápida e totalmente privada. Solte uma ou várias imagens de uma vez e o ZipPixel escolhe automaticamente o formato que gera o menor arquivo, mostrando em tempo real o tamanho original, o novo tamanho e quanto você economizou. Ajuste a qualidade quando quiser e fique tranquilo: tudo roda localmente com a Canvas API, sem enviar nenhuma imagem para servidores.",
     },
     articles: { title: "Palavras podem mudar o mundo!" },
     footer: { builtWith: "Feito com", by: "por", sourceCode: "Código-fonte" },
@@ -161,6 +165,8 @@ export const translations = {
       visit: "Visitar",
       notepad:
         "Una libreta digital que convierte tu voz en texto: graba una nota de audio y se transcribe automáticamente. Organiza las notas en carpetas, marca favoritas, búscalas al instante y escúchalas con lectura por voz eligiendo el locutor, todo en tema claro u oscuro.",
+      zippixel:
+        "Una herramienta que comprime y reduce tus imágenes directamente en el navegador: gratis, rápida y totalmente privada. Suelta una o varias imágenes a la vez y ZipPixel elige automáticamente el formato que genera el archivo más pequeño, mostrando en tiempo real el tamaño original, el nuevo tamaño y cuánto ahorraste. Ajusta la calidad cuando quieras y quédate tranquilo: todo se ejecuta localmente con la Canvas API, sin enviar ninguna imagen a servidores.",
     },
     articles: { title: "¡Las palabras pueden cambiar el mundo!" },
     footer: { builtWith: "Hecho con", by: "por", sourceCode: "Código fuente" },
@@ -211,6 +217,8 @@ export const translations = {
       visit: "Voir",
       notepad:
         "Un bloc-notes numérique qui transforme votre voix en texte : enregistrez une note audio et elle est transcrite automatiquement. Organisez les notes en dossiers, marquez vos favorites, recherchez-les instantanément et réécoutez-les en lecture vocale avec la voix de votre choix, le tout en thème clair ou sombre.",
+      zippixel:
+        "Un outil qui compresse et réduit vos images directement dans le navigateur — gratuit, rapide et totalement privé. Déposez une ou plusieurs images à la fois et ZipPixel choisit automatiquement le format qui produit le fichier le plus léger, en affichant en temps réel la taille d'origine, la nouvelle taille et le gain réalisé. Ajustez la qualité quand vous le souhaitez et soyez tranquille : tout s'exécute localement avec la Canvas API, aucune image n'est envoyée vers des serveurs.",
     },
     articles: { title: "Les mots peuvent changer le monde !" },
     footer: { builtWith: "Conçu avec", by: "par", sourceCode: "Code source" },
@@ -261,6 +269,8 @@ export const translations = {
       visit: "Ansehen",
       notepad:
         "Ein digitaler Notizblock, der deine Stimme in Text verwandelt — nimm eine Audionotiz auf, und sie wird automatisch transkribiert. Organisiere Notizen in Ordnern, markiere Favoriten, durchsuche sie sofort und höre sie dir per Sprachausgabe mit der Stimme deiner Wahl an, alles im hellen oder dunklen Design.",
+      zippixel:
+        "Ein Tool, das deine Bilder direkt im Browser komprimiert und verkleinert — kostenlos, schnell und vollständig privat. Lege eines oder mehrere Bilder auf einmal ab, und ZipPixel wählt automatisch das Format mit der kleinsten Dateigröße und zeigt in Echtzeit die Originalgröße, die neue Größe und die Ersparnis an. Passe die Qualität jederzeit an und sei beruhigt: Alles läuft lokal mit der Canvas API, kein Bild wird an einen Server gesendet.",
     },
     articles: { title: "Worte können die Welt verändern!" },
     footer: { builtWith: "Erstellt mit", by: "von", sourceCode: "Quellcode" },
@@ -311,6 +321,8 @@ export const translations = {
       visit: "Visita",
       notepad:
         "Un blocco note digitale che trasforma la tua voce in testo: registra una nota audio e viene trascritta automaticamente. Organizza le note in cartelle, segna le preferite, cercale all'istante e riascoltale con la lettura vocale scegliendo la voce, tutto in tema chiaro o scuro.",
+      zippixel:
+        "Uno strumento che comprime e riduce le tue immagini direttamente nel browser — gratuito, veloce e completamente privato. Trascina una o più immagini alla volta e ZipPixel sceglie automaticamente il formato che produce il file più piccolo, mostrando in tempo reale la dimensione originale, la nuova dimensione e quanto hai risparmiato. Regola la qualità quando vuoi e stai tranquillo: tutto viene eseguito localmente con la Canvas API, nessuna immagine viene inviata a server.",
     },
     articles: { title: "Le parole possono cambiare il mondo!" },
     footer: { builtWith: "Realizzato con", by: "da", sourceCode: "Codice sorgente" },
@@ -361,6 +373,8 @@ export const translations = {
       visit: "見る",
       notepad:
         "声をテキストに変えるデジタルメモ帳。音声でメモを録音すると自動で文字起こしされます。メモをフォルダで整理し、お気に入りを登録、すぐに検索でき、好みの声を選んで音声読み上げで聞き返すことも可能。ライト／ダークテーマに対応しています。",
+      zippixel:
+        "画像をブラウザ上で直接圧縮・縮小できるツール。無料・高速で、完全にプライベートです。1枚でも複数枚でもまとめて読み込むと、ZipPixelが最も小さくなる形式を自動で選び、元のサイズ・圧縮後のサイズ・削減率をリアルタイムで表示します。画質はいつでも調整可能。すべての処理はCanvas APIでローカルに実行されるため、画像がサーバーに送信されることはありません。",
     },
     articles: { title: "言葉は世界を変えられる！" },
     footer: { builtWith: "制作", by: "by", sourceCode: "ソースコード" },
@@ -411,6 +425,8 @@ export const translations = {
       visit: "查看",
       notepad:
         "一款将语音转为文字的数字记事本——录制语音笔记即可自动转录。可将笔记整理到文件夹、标记收藏、即时搜索，还能选择喜欢的语音通过语音朗读回放收听，并支持浅色与深色主题。",
+      zippixel:
+        "一款可在浏览器中直接压缩并缩小图片的工具——免费、快速且完全私密。一次拖入一张或多张图片，ZipPixel 会自动选择体积最小的格式，并实时显示原始大小、压缩后大小以及节省的比例。你可以随时调整画质，且尽管放心：所有处理都通过 Canvas API 在本地完成，任何图片都不会上传到服务器。",
     },
     articles: { title: "言语可以改变世界！" },
     footer: { builtWith: "用", by: "打造，作者", sourceCode: "源代码" },
