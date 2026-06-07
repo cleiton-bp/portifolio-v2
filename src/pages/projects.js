@@ -14,11 +14,46 @@ import {
   animate,
 } from "framer-motion";
 import project1 from "../../public/images/projects/image-project.jpg";
-import project2 from "../../public/images/projects/notepad.png";
-import project3 from "../../public/images/projects/zip-pixel.png";
+import notepadLight from "../../public/images/projects/note-pad/note-pad-ligth.png";
+import notepadDark from "../../public/images/projects/note-pad/note-pad-dark.png";
+import zipPixelLight from "../../public/images/projects/zip-pixel/zip-pixel-ligth.png";
+import zipPixelDark from "../../public/images/projects/zip-pixel/zip-pixel-dark.png";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const FramerImage = motion(Image);
+
+/* Renders the project thumbnail, swapping between light/dark variants based
+   on the active theme (class-based dark mode). Falls back to a single image
+   when no dark variant is provided. */
+const ProjectImage = ({ img, imgDark, title, hoverScale = 1.06, priority, sizes }) => {
+  const common = {
+    alt: title,
+    variants: imageReveal,
+    initial: "hidden",
+    whileInView: "show",
+    viewport: { once: true, margin: "-80px" },
+    whileHover: { scale: hoverScale },
+    transition: { duration: 0.4, ease: "easeOut" },
+    priority,
+    sizes,
+  };
+  return (
+    <>
+      <FramerImage
+        {...common}
+        src={img}
+        className={`w-full h-auto ${imgDark ? "dark:hidden" : ""}`}
+      />
+      {imgDark && (
+        <FramerImage
+          {...common}
+          src={imgDark}
+          className="w-full h-auto hidden dark:block"
+        />
+      )}
+    </>
+  );
+};
 
 const reveal = {
   hidden: { opacity: 0, y: 80, rotateX: -12, filter: "blur(6px)" },
@@ -175,7 +210,7 @@ const Magnetic = ({ children, className = "" }) => {
   );
 };
 
-const FeaturedProject = ({ type, title, summary, img, link, github, index = 0 }) => {
+const FeaturedProject = ({ type, title, summary, img, imgDark, link, github, index = 0 }) => {
   const { t } = useLanguage();
   return (
     <TiltCard
@@ -193,16 +228,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github, index = 0 })
         target="_blank"
         style={{ transform: "translateZ(20px)" }}
       >
-        <FramerImage
-          src={img}
-          alt={title}
-          variants={imageReveal}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-80px" }}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.06 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
+        <ProjectImage
+          img={img}
+          imgDark={imgDark}
+          title={title}
+          hoverScale={1.06}
           priority
           sizes="
             (max-width: 768px) 100vw,
@@ -259,7 +289,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, index = 0 })
   );
 };
 
-const Project = ({ title, type, img, link, github, index = 0 }) => {
+const Project = ({ title, type, img, imgDark, link, github, index = 0 }) => {
   const { t } = useLanguage();
   return (
     <TiltCard
@@ -281,16 +311,11 @@ const Project = ({ title, type, img, link, github, index = 0 }) => {
         target="_blank"
         style={{ transform: "translateZ(20px)" }}
       >
-        <FramerImage
-          src={img}
-          alt={title}
-          variants={imageReveal}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, margin: "-80px" }}
-          className="w-full h-auto"
-          whileHover={{ scale: 1.08 }}
-          transition={{ duration: 0.4, ease: "easeOut" }}
+        <ProjectImage
+          img={img}
+          imgDark={imgDark}
+          title={title}
+          hoverScale={1.08}
         />
       </Link>
 
@@ -352,7 +377,8 @@ function Projects() {
             <div className="col-span-12">
               <FeaturedProject
                 index={0}
-                img={project3}
+                img={zipPixelLight}
+                imgDark={zipPixelDark}
                 title="ZipPixel"
                 summary={t("projects.zippixel")}
                 type={t("projects.featured")}
@@ -362,7 +388,8 @@ function Projects() {
             <div className="col-span-12">
               <FeaturedProject
                 index={1}
-                img={project2}
+                img={notepadLight}
+                imgDark={notepadDark}
                 title="Notepad"
                 summary={t("projects.notepad")}
                 type={t("projects.featured")}
