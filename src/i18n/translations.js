@@ -63,6 +63,8 @@ export const translations = {
         "A digital notepad that turns your voice into text — record an audio note and it's transcribed automatically. Organize notes into folders, mark favorites, search them instantly, and listen back with text-to-speech in the voice you choose, all in a light or dark theme.",
       zippixel:
         "A tool that compresses and shrinks your images right in the browser — free, fast and completely private. Drop in one or several images at once and ZipPixel automatically picks the format that yields the smallest file, showing the original size, the new size and how much you saved in real time. Tweak the quality whenever you like, and rest easy: everything runs locally with the Canvas API, so no image is ever uploaded to a server.",
+      birthdaymessage:
+        "A birthday card you create in a minute and send as a link. Type the name, pick one of six styles, start from a ready-made message or write your own, then share it on WhatsApp — whoever opens it sees an animated card bursting with confetti, floating hearts or golden sparkles. The whole card travels inside the link itself: no server, no database, nothing stored anywhere, so what you write stays between you and the person you sent it to.",
     },
     articles: { title: "Words can change the world!" },
     footer: { builtWith: "Built with", by: "by", sourceCode: "Source Code" },
@@ -115,6 +117,8 @@ export const translations = {
         "Um bloco de notas digital que transforma sua voz em texto — grave uma nota em áudio e ela é transcrita automaticamente. Organize as notas em pastas, marque favoritas, busque rapidamente e ouça-as de volta com leitura por voz, escolhendo o locutor, tudo em tema claro ou escuro.",
       zippixel:
         "Uma ferramenta que comprime e reduz suas imagens direto no navegador — grátis, rápida e totalmente privada. Solte uma ou várias imagens de uma vez e o ZipPixel escolhe automaticamente o formato que gera o menor arquivo, mostrando em tempo real o tamanho original, o novo tamanho e quanto você economizou. Ajuste a qualidade quando quiser e fique tranquilo: tudo roda localmente com a Canvas API, sem enviar nenhuma imagem para servidores.",
+      birthdaymessage:
+        "Um cartão de aniversário que você cria em um minuto e envia como link. Digite o nome, escolha um dos seis estilos, use uma das mensagens prontas ou escreva a sua, e mande pelo WhatsApp — quem abre vê um cartão animado, com explosão de confetes, corações flutuando ou brilhos dourados. O cartão inteiro viaja dentro do próprio link: sem servidor, sem banco de dados e sem nada guardado, então o que você escreve fica só entre você e quem recebe.",
     },
     articles: { title: "Palavras podem mudar o mundo!" },
     footer: { builtWith: "Feito com", by: "por", sourceCode: "Código-fonte" },
@@ -167,6 +171,8 @@ export const translations = {
         "Una libreta digital que convierte tu voz en texto: graba una nota de audio y se transcribe automáticamente. Organiza las notas en carpetas, marca favoritas, búscalas al instante y escúchalas con lectura por voz eligiendo el locutor, todo en tema claro u oscuro.",
       zippixel:
         "Una herramienta que comprime y reduce tus imágenes directamente en el navegador: gratis, rápida y totalmente privada. Suelta una o varias imágenes a la vez y ZipPixel elige automáticamente el formato que genera el archivo más pequeño, mostrando en tiempo real el tamaño original, el nuevo tamaño y cuánto ahorraste. Ajusta la calidad cuando quieras y quédate tranquilo: todo se ejecuta localmente con la Canvas API, sin enviar ninguna imagen a servidores.",
+      birthdaymessage:
+        "Una tarjeta de cumpleaños que creas en un minuto y envías como enlace. Escribe el nombre, elige uno de los seis estilos, parte de un mensaje listo o escribe el tuyo, y compártelo por WhatsApp: quien lo abre ve una tarjeta animada, con una explosión de confeti, corazones flotando o destellos dorados. La tarjeta entera viaja dentro del propio enlace: sin servidor, sin base de datos y sin nada guardado, así que lo que escribes queda solo entre tú y quien lo recibe.",
     },
     articles: { title: "¡Las palabras pueden cambiar el mundo!" },
     footer: { builtWith: "Hecho con", by: "por", sourceCode: "Código fuente" },
@@ -219,6 +225,8 @@ export const translations = {
         "Un bloc-notes numérique qui transforme votre voix en texte : enregistrez une note audio et elle est transcrite automatiquement. Organisez les notes en dossiers, marquez vos favorites, recherchez-les instantanément et réécoutez-les en lecture vocale avec la voix de votre choix, le tout en thème clair ou sombre.",
       zippixel:
         "Un outil qui compresse et réduit vos images directement dans le navigateur — gratuit, rapide et totalement privé. Déposez une ou plusieurs images à la fois et ZipPixel choisit automatiquement le format qui produit le fichier le plus léger, en affichant en temps réel la taille d'origine, la nouvelle taille et le gain réalisé. Ajustez la qualité quand vous le souhaitez et soyez tranquille : tout s'exécute localement avec la Canvas API, aucune image n'est envoyée vers des serveurs.",
+      birthdaymessage:
+        "Une carte d'anniversaire que vous créez en une minute et envoyez sous forme de lien. Saisissez le prénom, choisissez l'un des six styles, partez d'un message prêt à l'emploi ou écrivez le vôtre, puis partagez-le sur WhatsApp — la personne qui l'ouvre découvre une carte animée, avec une explosion de confettis, des cœurs qui flottent ou des éclats dorés. La carte entière voyage dans le lien lui-même : aucun serveur, aucune base de données, rien de stocké, donc ce que vous écrivez reste entre vous et le destinataire.",
     },
     articles: { title: "Les mots peuvent changer le monde !" },
     footer: { builtWith: "Conçu avec", by: "par", sourceCode: "Code source" },
@@ -271,6 +279,8 @@ export const translations = {
         "Ein digitaler Notizblock, der deine Stimme in Text verwandelt — nimm eine Audionotiz auf, und sie wird automatisch transkribiert. Organisiere Notizen in Ordnern, markiere Favoriten, durchsuche sie sofort und höre sie dir per Sprachausgabe mit der Stimme deiner Wahl an, alles im hellen oder dunklen Design.",
       zippixel:
         "Ein Tool, das deine Bilder direkt im Browser komprimiert und verkleinert — kostenlos, schnell und vollständig privat. Lege eines oder mehrere Bilder auf einmal ab, und ZipPixel wählt automatisch das Format mit der kleinsten Dateigröße und zeigt in Echtzeit die Originalgröße, die neue Größe und die Ersparnis an. Passe die Qualität jederzeit an und sei beruhigt: Alles läuft lokal mit der Canvas API, kein Bild wird an einen Server gesendet.",
+      birthdaymessage:
+        "Eine Geburtstagskarte, die du in einer Minute erstellst und als Link verschickst. Namen eintippen, einen von sechs Stilen wählen, eine fertige Nachricht übernehmen oder selbst schreiben und das Ganze per WhatsApp teilen — wer den Link öffnet, sieht eine animierte Karte mit Konfettiregen, schwebenden Herzen oder goldenem Glitzern. Die komplette Karte steckt im Link selbst: kein Server, keine Datenbank, nichts gespeichert — was du schreibst, bleibt zwischen dir und der beschenkten Person.",
     },
     articles: { title: "Worte können die Welt verändern!" },
     footer: { builtWith: "Erstellt mit", by: "von", sourceCode: "Quellcode" },
@@ -323,6 +333,8 @@ export const translations = {
         "Un blocco note digitale che trasforma la tua voce in testo: registra una nota audio e viene trascritta automaticamente. Organizza le note in cartelle, segna le preferite, cercale all'istante e riascoltale con la lettura vocale scegliendo la voce, tutto in tema chiaro o scuro.",
       zippixel:
         "Uno strumento che comprime e riduce le tue immagini direttamente nel browser — gratuito, veloce e completamente privato. Trascina una o più immagini alla volta e ZipPixel sceglie automaticamente il formato che produce il file più piccolo, mostrando in tempo reale la dimensione originale, la nuova dimensione e quanto hai risparmiato. Regola la qualità quando vuoi e stai tranquillo: tutto viene eseguito localmente con la Canvas API, nessuna immagine viene inviata a server.",
+      birthdaymessage:
+        "Un biglietto di compleanno che crei in un minuto e invii come link. Scrivi il nome, scegli uno dei sei stili, parti da un messaggio già pronto o scrivi il tuo, poi condividilo su WhatsApp: chi lo apre vede un biglietto animato, con un'esplosione di coriandoli, cuori che fluttuano o scintillii dorati. L'intero biglietto viaggia dentro il link stesso: nessun server, nessun database, niente di salvato, così quello che scrivi resta solo tra te e chi lo riceve.",
     },
     articles: { title: "Le parole possono cambiare il mondo!" },
     footer: { builtWith: "Realizzato con", by: "da", sourceCode: "Codice sorgente" },
@@ -375,6 +387,8 @@ export const translations = {
         "声をテキストに変えるデジタルメモ帳。音声でメモを録音すると自動で文字起こしされます。メモをフォルダで整理し、お気に入りを登録、すぐに検索でき、好みの声を選んで音声読み上げで聞き返すことも可能。ライト／ダークテーマに対応しています。",
       zippixel:
         "画像をブラウザ上で直接圧縮・縮小できるツール。無料・高速で、完全にプライベートです。1枚でも複数枚でもまとめて読み込むと、ZipPixelが最も小さくなる形式を自動で選び、元のサイズ・圧縮後のサイズ・削減率をリアルタイムで表示します。画質はいつでも調整可能。すべての処理はCanvas APIでローカルに実行されるため、画像がサーバーに送信されることはありません。",
+      birthdaymessage:
+        "1分で作って、リンクとして送れるバースデーカード。名前を入力し、6つのスタイルから1つを選び、用意されたメッセージを使うか自分の言葉で書いて、WhatsAppで送るだけ。リンクを開いた人には、紙吹雪が舞い、ハートが浮かび、金色の輝きがきらめくアニメーションのカードが現れます。カードの内容はすべてリンクの中に収まっていて、サーバーもデータベースもなく、どこにも保存されません。書いた言葉は、あなたと受け取る人だけのものです。",
     },
     articles: { title: "言葉は世界を変えられる！" },
     footer: { builtWith: "制作", by: "by", sourceCode: "ソースコード" },
@@ -427,6 +441,8 @@ export const translations = {
         "一款将语音转为文字的数字记事本——录制语音笔记即可自动转录。可将笔记整理到文件夹、标记收藏、即时搜索，还能选择喜欢的语音通过语音朗读回放收听，并支持浅色与深色主题。",
       zippixel:
         "一款可在浏览器中直接压缩并缩小图片的工具——免费、快速且完全私密。一次拖入一张或多张图片，ZipPixel 会自动选择体积最小的格式，并实时显示原始大小、压缩后大小以及节省的比例。你可以随时调整画质，且尽管放心：所有处理都通过 Canvas API 在本地完成，任何图片都不会上传到服务器。",
+      birthdaymessage:
+        "一分钟就能做好、以链接形式送出的生日贺卡。输入名字，从六种风格中挑一个，套用现成的祝福语或自己写，然后通过 WhatsApp 发送——打开链接的人会看到一张动画贺卡，伴随纷飞的彩带、漂浮的爱心或金色的闪光。整张贺卡都藏在链接本身里：没有服务器，没有数据库，不保存任何内容，你写下的话只属于你和收到的人。",
     },
     articles: { title: "言语可以改变世界！" },
     footer: { builtWith: "用", by: "打造，作者", sourceCode: "源代码" },
